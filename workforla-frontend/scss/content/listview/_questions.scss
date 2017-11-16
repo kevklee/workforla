@@ -1,0 +1,42 @@
+//Questions
+
+.questions {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #E5EBEE;
+  text-align: center;
+  @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: column);
+}
+
+.questions-text {
+  @media(min-width: $break-lg){
+    text-align: left;
+    margin-left:  10%;
+  }
+}
+
+.questions-text h2 {
+  color: #0F3753;
+  @media(min-width: $break-m){
+    margin-top: 20px;
+    @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: column);
+  }
+}
+
+.questions-wrap {
+  @media(min-width: $break-lg){
+  @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: row);
+  }
+}
+
+.questions-wrap p {
+  margin-top: 20px;
+  color: #0F3753;
+}
+
+.img-block {
+  display:none;
+  @media(min-width: $break-m){
+    display:block;
+  }
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Listview</title>
+         <!--Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+         <!--Main CSS -->
+        <link rel="stylesheet" href="css/listview.css">
+    </head>
+<body>
+<header>
+    <!--Navigation-->
+        <nav>
+            <div class="nav-wrapper">
+              <div class="logo">
+                  <a href="index.html"><img src="img/logo.png"></a>
+              </div>
+                <div class="menu">
+                    <a id="jobs" href="listview.html">Jobs</a>
+                    <a id="process" href="process.html">Process</a>
+                    <a id="whyla" href="whyla.html">Why L.A.</a>
+                    <a id="faqs" href="faqs.html">FAQ's</a>
+                    <a id="about" href="aboutus.html">About Us</a>
+                </div>
+                <div class="hamburger">
+                  <a id="hamburger-menu" href="#"><img src="/img/hamburger-menu.png"></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<!--Crums-->
+<div class="head-wrap">
+  <ol class="breadcrumb">
+    <li id="crumb-1" class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li id="crumb-2" class="breadcrumb-item active">List</li>
+  </ol>
+
+<!--Job Search Header-->
+
+  <div class="job">
+    <h1>Jobs</h1>
+  </div>
+</div>
+
+<div class="job-search">
+<div class="search">
+    <input type="text" id="search-text" name="search-text" value="Search FAQ's"><button type="submit">Go!</button>
+</div>
+
+<div class="applications">
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Accepting Applications
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Accepting Applications</a>
+    <a class="dropdown-item" href="#">A - Z</a>
+    <a class="dropdown-item" href="#">Popularity</a>
+  </div>
+</div>
+</div>
+
+<!--Filter-->
+
+<div class="filter">
+    <a href="#"><img src="img/filter-icon.png"></a>
+    <a href="#"><p>Filter</p></a>
+</div>
+</div>
+
+<div class="filter-fill">
+  <div class="filter-wrap">
+    <ul>
+    </ul>
+    <div class="categories">
+    <div class="wrap-1">
+        <div class="row-1">
+          <p>Categories</p>
+          <input type=checkbox name="Accounting & Finance" value="Accounting & Finance"> Accounting & Finance</br>
+          <input type=checkbox name="Architecture & Engineering" value="Architecture & Engineering"> Architecture & Engineering</br>
+          <input type=checkbox name="Art, Design, & Media" value="Art, Design & Media"> Art, Design & Media</br>
+          <input type=checkbox name="Business Operations" value="Business Operations"> Business Operations</br>
+          <input type=checkbox name="Community & Social Services" value="Community & Social Services"> Community & Social Services</br>
+        </div>
+        <div class="row-2">
+          <input type=checkbox name="Construction" value="Construction"> Construction</br>
+          <input type=checkbox name="Education" value="Education"> Education</br>
+          <input type=checkbox name="Healthcare" value="Healthcare"> Healthcare</br>
+          <input type=checkbox name="Installation" value="Installation"> Installation</br>
+          <input type=checkbox name="Legal" value="Legal"> Legal</br>
+        </div>
+        <div class="row-3">
+          <input type=checkbox name="Maintenance" value="Maintenance"> Maintenance</br>
+          <input type=checkbox name="Protective Services" value="Protective Services"> Protective Services</br>
+          <input type=checkbox name="Office" value="Office"> Office</br>
+          <input type=checkbox name="Science" value="Science"> Science</br>
+          <input type=checkbox name="Technology" value="Technology"> Technology</br>
+        </div>
+        <div class="vertical-line"></div>
+      </div>
+      <div class="wrap-2">
+        <div class="row-4">
+          <p>Min Salary</p>
+          <input type=checkbox name="sal-1" value="$25,000"> $25,000</br>
+          <input type=checkbox name="sal-2" value="$45,000"> $45,000</br>
+          <input type=checkbox name="sal-3" value="$55,000"> $55,000</br>
+          <input type=checkbox name="sal-4" value="$75,000"> $75,000</br>
+          <input type=checkbox name="sal-5" value="$100,000"> $100,000</br>
+        </div>
+        <div class="row-5">
+          <p>Education</p>
+          <input type=checkbox name="edu-1" value="None Required"> None Required</br>
+          <input type=checkbox name="edu-2" value="High School"> High School</br>
+          <input type=checkbox name="edu-3" value="Collage"> Collage</br>
+          <input type=checkbox name="edu-4" value="Certification"> Certification</br>
+        </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<hr>
+
+<div class="job-colaps">
+    <a class="job-text" href="#">
+        <h1>Accounting Manager</h1>
+        <p>$7,539.42 - $11,296.00 monthly | Bachelor's</p>
+        <p class="job-status">Next Exam xx/xx/xxxx</p>
+        <p class="job-status" id="status-text">Status:</p>
+    </a>
+    <a href="#">
+      <img id="arrow-right" src="img/arrow-right-2.png">
+    </a>
+</div>
+
+<hr>
+
+<div class="job-colaps">
+    <a class="job-text" href="#">
+        <h1>Accounts Payable Clerk</h1>
+        <p>$7539.42 - $11,296.00 monthly | Bachelor's</p>
+        <p class="job-status">Next Exam xx/xx/xxxx</p>
+        <p class="job-status" id="status-text">Status:</p>
+    </a>
+    <a href="#">
+      <img id="arrow-right" src="img/arrow-right-2.png">
+    </a>
+</div>
+
+<hr>
+
+<div class="job-colaps">
+    <a class="job-text" href="#">
+        <h1>Cashier I</h1>
+        <p>$7,539.42 - $11,296.00 monthly | Bachelor's</p>
+        <p class="job-status">Next Exam xx/xx/xxxx</p>
+        <p class="job-status" id="status-text">Status:</p>
+    </a>
+    <a href="#">
+      <img id="arrow-right" src="img/arrow-right-2.png">
+    </a>
+</div>
+
+<hr>
+
+<div class="job-colaps">
+    <a class="job-text" href="#">
+        <h1>Payroll Clerk</h1>
+        <p>$7,539.42 - $11,296.00 monthly | Bachelor's</p>
+        <p class="job-status">Next Exam xx/xx/xxxx</p>
+        <p class="job-status" id="status-text">Status:</p>
+    </a>
+    <a href="#">
+      <img id="arrow-right" src="img/arrow-right-2.png">
+    </a>
+</div>
+
+<hr>
+
+<div class="page-wrapper">
+<div class="page-nav">
+    <ul>
+        <li><a id="dbl-arrow-left" href="#"><img src="img/double-arrow-left.png"></a></li>
+        <li><a href="#link" id="link">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a id="dbl-arrow-right" href="#"><img src="img/double-arrow.png"></a></li>
+    </ul>
+</div>
+</div>
+
+<!--Questions-->
+
+<div class="questions">
+  <div class="questions-wrap">
+    <div class="questions-img">
+    <img class="img-block" src="img/questions.png">
+  </div>
+  <div class="questions-text">
+    <h2>Have Questions?</h2>
+    <p>Check out the FAQs</p>
+    <a href="#">Read the faqs</a>
+    <a href="#"><img src="img/faqs-arrow.png"></a>
+  </div>
+  </div>
+</div>
+
+<!--footer-->
+
+<footer>
+    <div class="footer-wrap">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Application Process</a></li>
+        <li><a href="#">Why Work for L.A.?</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">About Us</a></li>
+    </ul>
+    <div class="contact">
+        <a href="#">Contact Us: </a>
+        <a id="email" href="#">workfor.la@gmail.com</a>
+    </div>
+    </div>
+</footer>
+
+<!--jQuery -->
+
+<script type="text/javascript"
+src="https://code.jquery.com/jquery-3.2.1.min.js"
+integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+
+<!--Javascript -->
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/app.min.js"></script>
+
+<!--Bootstrap -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

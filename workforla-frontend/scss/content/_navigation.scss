@@ -1,0 +1,74 @@
+// Navigation CSS
+
+.nav-wrapper {
+    background-color: $color-nav;
+    height: 70px;
+    width: 100%;
+}
+
+.logo img {
+    width: 50px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+
+.menu {
+    position: relative;
+    top: 19px;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: column);
+    @media(min-width: $break-m){
+    background-color: transparent;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    width: 600px;
+    @include flexy ($wrap: no-wrap, $just: space-between, $align: center, $dir: row);
+    }
+    @media(min-width: $break-lg){
+    width: 920px;
+    width: 725px;
+    }
+}
+
+.menu a{
+    display: none;
+    padding: 10px;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 16px;
+    width :100%;
+    text-decoration: none;
+    color: $color-nav;
+    &:hover {
+        color: white;
+        background-color: $color-nav;
+    }
+    @media(min-width: $break-m){
+        display: block;
+        font-size: 18px;
+        color: white;
+        &:hover {
+            color: #639E29;
+        }
+    }
+}
+
+.menu a.open {
+    display: block;
+}
+
+#hamburger-menu {
+    position: absolute;
+    right: 0;
+    top:0;
+    background-color: #215B7A;
+    padding: 23px 30px;
+    @media(min-width: $break-m){
+        display: none;
+    }
+  }

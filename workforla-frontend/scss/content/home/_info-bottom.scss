@@ -1,0 +1,61 @@
+// info-bottom
+
+.reason {
+    background: #F6F8F9;
+    text-align: center;
+    @include flexy ($wrap: no-wrap, $align: center, $just: center, $dir: column);
+}
+
+.reason h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 30px;
+    @media(min-width: $break-s){
+        font-size: 30px;
+    }
+    @media(min-width: $break-m){
+        font-size: 40px;
+    }
+    @media(min-width: $break-lg){
+        font-size: 48px;
+    }
+}
+
+.reason p {
+    font-size: 14px;
+    margin-top: 10px;
+    @media(min-width: $break-s){
+        font-size: 18px;
+    }
+    @media(min-width: $break-m){
+        font-size: 36px;
+        width: 80%;
+    }
+}
+
+.difference {
+    text-align: left;
+    @include flexy ($wrap: no-wrap, $align: center, $just: center, $dir: column);
+    @media(min-width: $break-m){
+          margin-top: 30px;
+          margin-bottom: 75px;
+          @include flexy ($wrap: no-wrap, $align: center, $just: center, $dir: row);
+    }
+}
+
+.difference ul {
+    margin-top: 20px;
+    @media(min-width: $break-m){
+        margin-left: 10%;
+    }
+}
+
+.difference li {
+    margin-top: 10px;
+    @media(min-width: $break-m){
+        font-size: 18px;
+    }
+    @media(min-width: $break-lg){
+        font-size: 36px;
+    }
+}

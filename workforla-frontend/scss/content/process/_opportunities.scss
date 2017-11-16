@@ -1,0 +1,43 @@
+//Opportunities
+
+        .opp-wrap {
+          padding-top: 40px;
+          padding-bottom: 40px;
+          background: #E5EBEE;
+          text-align: center;
+          @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: column);
+        }
+
+        .opp-text {
+          @media(min-width: $break-lg){
+            text-align: left;
+            margin-left: 5%;
+            max-width: 475px;
+          }
+        }
+
+        .opp-text h2 {
+          color: #0F3753;
+          @media(min-width: $break-m){
+            margin-top: 20px;
+            @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: column);
+          }
+        }
+
+        .opp {
+          @media(min-width: $break-lg){
+          @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: row);
+          }
+        }
+
+        .opp-text p {
+          margin-top: 20px;
+          color: #0F3753;
+        }
+
+        .img-block {
+          display:none;
+          @media(min-width: $break-m){
+            display:block;
+          }
+        }

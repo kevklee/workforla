@@ -1,0 +1,19 @@
+@import 'utilities/variables',
+        'utilities/mixins', 'utilities/functions';
+
+@import 'content/navigation.scss',
+        'content/header.scss',
+        'content/footer.scss';
+
+@import 'content/listview/search.scss',
+        'content/listview/colapsbtn.scss',
+        'content/listview/pagenav.scss',
+        'content/listview/questions.scss',
+        'content/listview/filter.scss';
+
+// Main CSS
+
+* {
+    margin: 0;
+    padding: 0;
+}

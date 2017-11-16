@@ -1,0 +1,45 @@
+//Interview
+
+#meaningful {
+  margin-bottom: 50px;
+  @media(min-width: $break-lg){
+  margin-bottom: 350px;
+}
+}
+
+//Resources
+
+.resources-wrap {
+  @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: column);
+    @media(min-width: $break-lg){
+      position: absolute;
+      left: 65%;
+      top: 575px;
+    }
+}
+
+.resources {
+  margin-top: 30px;
+  width: 315px;
+  height: 233px;
+  border: 1px solid grey;
+  @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: column);
+  @media(min-width: $break-lg){
+  @include flexy ($wrap: no-wrap, $just: center, $align: left, $dir: column);
+  padding-left: 40px;
+  margin-top: 200px;
+  }
+}
+
+.resources p {
+  font-size: 24px;
+}
+
+//Join
+
+#join {
+    margin-bottom: 50px;
+  @media(min-width: $break-lg){
+    margin-bottom: 300px;
+  }
+}

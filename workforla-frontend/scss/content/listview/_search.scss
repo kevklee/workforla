@@ -1,0 +1,85 @@
+// Job Search Header
+
+.job-search {
+    background-color: #E5EBEE;
+    height: 200px;
+    @include flexy ($wrap: no-wrap,
+    $just: center, $align: center, $dir: column);
+    @media(min-width: $break-m){
+      padding-top: 30px;
+      height: 70px;
+      padding-top: 3px;
+      @include flexy ($wrap: no-wrap,
+      $just: space-between, $align: center, $dir: row);
+    }
+    }
+
+.search {
+    @include flexy ($wrap: no-wrap,
+    $just: center, $align: center, $dir: row);
+}
+
+.search input {
+    height: 45px;
+    width: 205px;
+    @media(min-width: $break-m){
+    width: 300px;
+    height: 55px;
+    margin-left: 12px;
+    }
+}
+
+.search input[value="Search FAQ's"] {
+    padding-left: 20px;
+    color: #304858;
+    font-size: 18px;
+}
+
+.applications {
+  @media(max-width: $break-m){
+  margin-top: 20px;
+  }
+}
+
+.search button {
+    background-color: #639E29;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    text-decoration:none;
+    @media(min-width: $break-m){
+    padding: 15px 30px;
+    }
+}
+
+.btn-secondary {
+    color: $color-nav;
+    background-color: white;
+    border-radius: 0;
+    width: 246px;
+    margin-bottom: 15px;
+    &:hover {
+    background-color: white;
+    color: $color-nav;
+    }
+    @media(min-width: $break-m){
+    margin-top: 12px;
+    }
+}
+
+.btn-secondary.active, .btn-secondary:active, .show>.btn-secondary.dropdown-toggle {
+    background-color: white;
+}
+
+.dropdown-menu {
+    width: 245px;
+}
+
+.dropdown-item {
+    color: $color-nav;
+    &:hover {
+        color: white;
+        background-color: $color-nav;
+    }
+}

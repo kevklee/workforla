@@ -1,0 +1,122 @@
+// Career
+
+.career-wrap {
+    background-color: #E5EBEE;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+
+.search {
+    margin-top: 60px;
+    @include flexy ($wrap: no-wrap, $align: center, $just: center, $dir: row);
+}
+
+.search input {
+    width: 275px;
+    height: 70px;
+    @media(min-width: $break-s){
+        width: 350px;
+    }
+    @media(min-width: $break-m){
+        width: 600px;
+    }
+    @media(min-width: $break-lg){
+        width: 714px;
+    }
+}
+
+.search input[value="Search opportunities"] {
+    font-size: 20px;
+    color: #0F3753;
+    padding-left: 17px;
+}
+
+.search a {
+    color: white;
+    text-decoration: none;
+    padding: 22px 24px;
+    background-color: #639E29;
+    border-radius: 0 5px 5px 0;
+}
+
+.career-text {
+    text-align: center;
+    @include flexy ($wrap: no-wrap, $align: center, $just: center, $dir: column);
+}
+
+.career-text h2 {
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0F3753;
+    @media(min-width: $break-s){
+        font-size: 30px;
+    }
+    @media(min-width: $break-m){
+        font-size: 40px;
+    }
+    @media(min-width: $break-lg){
+        font-size: 48px;
+    }
+}
+
+.career-text p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #4A4A4A;
+    width: 350px;
+    @media(min-width: $break-s){
+        font-size: 18px;
+    }
+    @media(min-width: $break-m){
+        font-size: 36px;
+        width: 80%;
+    }
+}
+
+// Career-Icons
+
+.career-icons {
+    list-style-type: none;
+    text-align: center;
+    @include flexy ($wrap: wrap, $align: center, $just: center, $dir: column);
+    @media(min-width: $break-s){
+    max-width: 100%;
+    @include flexy ($wrap: wrap, $align: center, $just: center, $dir: row);
+    }
+}
+
+
+.career-icons li {
+    font-size: 12px;
+    @media(min-width: $break-m){
+    margin-left: 50px;
+    font-size: 18px;
+    }
+}
+
+.career-icons li a {
+    text-decoration: none;
+    @include flexy ($wrap: wrap, $align: center, $just: center, $dir: column);
+}
+
+.career-icons li img{
+    @media(min-width: $break-m){
+    }
+}
+
+.career-icons li p {
+    color: black;
+        &:hover {
+        color: #639E29;
+    }
+}
+
+.career-icons:first-child {
+    @media(min-width: $break-m){
+    margin-left: 0 !important;
+    }
+    @media(min-width: $break-lg){
+    }
+}

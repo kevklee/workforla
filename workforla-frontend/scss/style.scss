@@ -1,0 +1,22 @@
+@import 'utilities/variables',
+        'utilities/mixins', 'utilities/functions';
+
+@import 'content/navigation.scss',
+        'content/header.scss',
+        'content/footer.scss';
+
+@import 'content/home/info.scss',
+        'content/home/career.scss',
+        'content/home/application.scss',
+        'content/home/info-bottom.scss';
+
+// Main CSS
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+// @media(min-width: $break-s){}
+// @include flexy ($wrap: no-wrap, $align: center, $just: center, $dir: column);

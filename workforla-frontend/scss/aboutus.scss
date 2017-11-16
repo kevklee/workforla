@@ -1,0 +1,17 @@
+@import 'utilities/variables',
+        'utilities/mixins', 'utilities/functions';
+
+@import 'content/navigation.scss',
+        'content/header.scss',
+        'content/footer.scss';
+
+@import 'content/aboutus/aboutus.scss',
+        'content/aboutus/breadcrumbs.scss',
+        'content/aboutus/opportunities.scss',
+        'content/aboutus/resources.scss';
+
+//Body
+
+body {
+  background-color: #F6F8F9;
+}

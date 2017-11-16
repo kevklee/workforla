@@ -1,0 +1,212 @@
+@import 'utilities/variables',
+        'utilities/mixins', 'utilities/functions';
+
+@import 'content/navigation.scss',
+        'content/header.scss',
+        'content/footer.scss';
+
+//Body
+
+body {
+  background-color: #F6F8F9;
+}
+
+//Crumbs
+
+.aboutcrumb {
+  background-color: white;
+  font-size: 18px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  text-decoration: none;
+  list-style-type: none;
+  background-color: #F6F8F9;
+  margin-bottom: 0;
+}
+
+.aboutcrumb a {
+  text-decoration: none;
+}
+
+.banner-wrap {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.banner-wrap img {
+  width: 100%;
+}
+
+//About Us
+
+.faqs {
+  margin-top: 50px;
+  text-align: center;
+  @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: column);
+  @media(min-width: $break-lg){
+  @include flexy ($wrap: no-wrap, $just: left, $align: left, $dir: column);
+  margin-top: 80px;
+  margin-left: 25px;
+  text-align: left;
+  }
+}
+
+.faqs h1 {
+  font-size: 32px;
+  @media(min-width: $break-lg){
+  font-size: 48px;
+  }
+}
+
+//Dropdowns
+
+.dropdown-wrap {
+  margin-top: 20px;
+  @include flexy ($wrap: no-wrap, $just: center, $align: left, $dir: column);
+}
+
+.dropdown-wrap a {
+  font-family: "Avenir", sans-serif;
+  font-weight: bold;
+  color: $color-nav;
+  border: 1px solid #DDDDDD;
+  width: 100%;
+  font-size: 14px;
+  padding: 10px;
+  @include flexy ($wrap: no-wrap, $just: space-between, $align: left, $dir: row);
+  @media(min-width: $break-m){
+    width: 700px;
+    margin-left: 20px;
+    padding: 20px;
+  }
+}
+
+.open-dropdown {
+  width: 100%;
+  @include flexy ($wrap: no-wrap, $just: space-between, $align: left, $dir: row);
+}
+
+#exam-drop {
+  display:none !important;
+  background-color: white;
+  padding-top: 10px;
+  @include flexy ($wrap: no-wrap, $just: center, $align: left, $dir: column);
+}
+
+#exam-drop p {
+  margin-top: 15px;
+}
+
+#exam-drop.open {
+  display:block !important;
+}
+
+.arrow-2 {
+  display: none;
+}
+
+#dropdown-bot {
+  @media(min-width: $break-lg){
+  margin-bottom: 1000px;
+  }
+}
+
+//Resources
+
+.resources-wrap {
+  @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: column);
+    @media(max-width: $break-m){
+    margin-bottom: 75px;
+    }
+    @media(min-width: $break-lg){
+      position: absolute;
+      left: 65%;
+      top: 575px;
+    }
+}
+
+.resources {
+  margin-top: 30px;
+  width: 315px;
+  height: 500px;
+  border: 1px solid grey;
+  @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: column);
+  @media(min-width: $break-lg){
+  @include flexy ($wrap: no-wrap, $just: center, $align: left, $dir: column);
+  padding-left: 40px;
+  margin-top: 170px;
+  }
+}
+
+.exam {
+  margin-top: 40px;
+  @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: column);
+  @media(min-width: $break-lg){
+  @include flexy ($wrap: no-wrap, $just: center, $align: left, $dir: column);
+    }
+}
+
+.info {
+  margin-top: 40px;
+  @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: column);
+  @media(min-width: $break-lg){
+  @include flexy ($wrap: no-wrap, $just: center, $align: left, $dir: column);
+    }
+}
+
+.resources p {
+  font-size: 24px;
+}
+
+//Join
+
+#join {
+    margin-bottom: 50px;
+  @media(min-width: $break-lg){
+    margin-bottom: 300px;
+  }
+}
+
+//Opportunities
+
+        .opp-wrap {
+          padding-top: 40px;
+          padding-bottom: 40px;
+          background: #E5EBEE;
+          text-align: center;
+          @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: column);
+        }
+
+        .opp-text {
+          @media(min-width: $break-lg){
+            text-align: left;
+            margin-left: 5%;
+            max-width: 475px;
+          }
+        }
+
+        .opp-text h2 {
+          color: #0F3753;
+          @media(min-width: $break-m){
+            margin-top: 20px;
+            @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: column);
+          }
+        }
+
+        .opp {
+          @media(min-width: $break-lg){
+          @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: row);
+          }
+        }
+
+        .opp-text p {
+          margin-top: 20px;
+          color: #0F3753;
+        }
+
+        .img-block {
+          display:none;
+          @media(min-width: $break-m){
+            display:block;
+          }
+        }

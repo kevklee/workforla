@@ -1,0 +1,145 @@
+//Filter Img and wrap
+
+.filter {
+  @include flexy ($wrap: no-wrap,
+  $just: center, $align: center, $dir: row);
+  @media(min-width: $break-m){
+  margin-right: 25px;
+  }
+}
+
+.filter a {
+  list-style-type: none;
+  text-decoration: none;
+  color: $color-nav;
+}
+
+.filter p {
+  position: relative;
+  top: 10px;
+  margin-left: 10px;
+}
+
+.filter-fill {
+  height: auto;
+  background-color: #F6F8F9;
+}
+
+.filter-wrap {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.filter-fill ul {
+    font-size: 14px;
+    list-style-type: none;
+    color: $color-nav;
+    @include flexy ($wrap: no-wrap,
+    $just: center, $align: center, $dir: column);
+    @media(min-width: $break-lg){
+      @include flexy ($wrap: wrap,
+      $just: left, $align: center, $dir: row);
+    }
+}
+
+.filter-fill li {
+  @media(min-width: $break-lg){
+    margin-left: 20px;
+  }
+}
+
+//Filter Dropdown
+
+.vertical-line {
+   z-index: 1000;
+     @media(min-width: $break-lg){
+       display: block;
+       height: 150px;
+       width: 1px;
+       margin-left: 60px;
+     }
+}
+
+.categories {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  top: 324px;
+  background-color: #F6F8F9;
+  padding: 20px;
+  @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: row);
+    width: 100%;
+    @media(min-width: $break-lg){
+      bottom: 178px;
+    @include flexy ($wrap: no-wrap, $just: left, $align: left, $dir: row);
+        width: 100%;
+    }
+}
+
+.categories.open {
+  visibility: visible;
+}
+
+.categories p {
+  font-size: 20px;
+  @media(min-width: $break-m){
+  font-size: 24px;
+  }
+}
+
+.wrap-1 {
+  padding-top: 20px;
+  @media(min-width: $break-lg){
+    position: relative;
+    padding-top: 0;
+    @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: row);
+  }
+}
+
+.wrap-2 {
+  margin-left: 5%;
+  @media(min-width: $break-m){
+  margin-left: 15%;
+  }
+  @media(min-width: $break-lg){
+    margin-left: 5%;
+    @include flexy ($wrap: no-wrap, $just: flex-start, $align: flex-start, $dir: row);
+  }
+}
+
+.row-1 {
+  position: relative;
+}
+
+.row-2 {
+  @media(min-width: $break-lg) {
+  position: relative;
+  top: 22px;
+  margin-left: 60px;
+  }
+}
+
+.row-3 {
+  @media(min-width: $break-lg) {
+  position: relative;
+  top: 22px;
+  margin-left: 60px;
+  }
+}
+
+
+.row-4 {
+  @media(min-width: $break-lg) {
+    position: relative;
+  }
+
+}
+
+.row-5 {
+  position: relative;
+  top: 20px;
+  @media(min-width: $break-lg) {
+  top: 0;
+  margin-left: 60px;
+  }
+}

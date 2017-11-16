@@ -1,0 +1,78 @@
+// Applications
+
+.a-wrap {
+    background-color: #F6F8F9;
+    overflow: auto;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+}
+
+.a-text-wrap {
+    text-align: center;
+    @include flexy ($wrap: no-wrap, $align: center, $just: center, $dir: column);
+}
+
+.a-text-wrap h2 {
+    color: #0F3753;
+    font-size: 24px;
+    font-weight: bold;
+    @media(min-width: $break-s){
+        font-size: 30px;
+    }
+    @media(min-width: $break-m){
+        font-size: 40px;
+    }
+    @media(min-width: $break-lg){
+        font-size: 48px;
+    }
+}
+
+.a-text-wrap p {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    @media(min-width: $break-s){
+        font-size: 18px;
+    }
+    @media(min-width: $break-m){
+        font-size: 36px;
+    }
+}
+
+// Slider
+
+.slider-background {
+    border: 1px solid grey;
+    background: #748892;
+}
+
+.slider-container {
+    margin: 5%;
+    background-color: #748892;
+}
+
+ol.carousel-indicators {
+  position: absolute;
+  bottom: 14px;
+  margin: 0;
+  left: 0;
+  right: 0;
+  width: auto;
+}
+
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin: 10px;;
+  border-radius: 50%;
+  border: 0;
+  background: #D8D8D8;
+  top: 40px;
+}
+
+ol.carousel-indicators li.active {
+  background: white;
+}

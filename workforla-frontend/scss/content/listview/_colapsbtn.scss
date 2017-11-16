@@ -1,0 +1,52 @@
+// Collapse Buttons
+
+.job-colaps {
+    background: #F6F8F9;
+    @include flexy ($wrap: no-wrap, $just: space-between, $align: center, $dir: row);
+}
+
+.job-text {
+  margin-left: 20px;
+  overflow: hidden;
+}
+
+.job-colaps a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.job-colaps a h1 {
+    color: $color-nav;
+    font-size: 24px;
+    margin-top: 25px;
+}
+
+.job-colaps a p {
+    text-decoration: none;
+    color: $color-nav;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+#status-text {
+  margin-bottom: 25px !important;
+  @media(min-width: $break-m){
+    margin-left: 20px;
+  }
+}
+
+.job-status {
+  @media(min-width: $break-m){
+    display: inline-block;
+  }
+}
+
+#arrow-right {
+  margin-right: 30px;
+}
+
+hr {
+ margin: 0;
+ padding: 0;
+ border: .9px solid #DDDDDD;
+}

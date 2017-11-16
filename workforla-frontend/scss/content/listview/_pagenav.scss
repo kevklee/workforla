@@ -1,0 +1,63 @@
+//Page Navigation
+
+.page-wrapper {
+  position: relative;
+  background: #F6F8F9;
+}
+
+.page-nav  {
+    @include flexy ($wrap: no-wrap, $just: center, $align: center, $dir: row);
+    @media(min-width: $break-m){
+      margin-left: 50%;
+    }
+    @media(min-width: $break-lg){
+      margin-left: 60%;
+      height: 450px;
+    }
+}
+
+.page-nav ul {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    list-style-type: none;
+    @include flexy ($wrap: no-wrap, $just: left, $align: center, $dir: row);
+    &:hover {
+        list-style-type: none;
+        color: white;
+    }
+    @media(min-width: $break-lg){
+      position: relative;
+      bottom: 160px;
+    }
+}
+
+.page-nav ul li a {
+    background: white;
+    padding: 12px 20px;
+    border: 1px solid #ECEEEF;
+    color: #0275D8;
+    &:hover {
+        background-color: #0278AE;
+        list-style-type: none;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.page-nav ul li a:active {
+
+}
+
+#dbl-arrow-left {
+    &:hover {
+        background-color: white !important;
+
+    }
+}
+
+#dbl-arrow-right {
+    &:hover {
+        background-color: white !important;
+    }
+}
